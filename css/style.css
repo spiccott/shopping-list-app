@@ -36,6 +36,12 @@ body {
 	font-size: 3em;
 }
 
+@media (max-width: 510px) {
+	.heading h1 {
+		font-size: 2em;
+	}
+}
+
 .heading span {
 	color: #339933;
 }
@@ -49,10 +55,14 @@ body {
 .list-content {
 	width: 600px;
 	margin: 0 auto;
+	font-size: 1.2em;
 }
 
-.list-content {
-	font-size: 1.2em;
+@media (max-width: 630px) {
+	.list-content {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
 #item-input > p,
@@ -125,9 +135,3 @@ body {
 	float: right;
 }
 
-@media (max-width: 630px) {
-	.list-content {
-		width: 90%;
-		margin: 0 auto;
-	}
-}
