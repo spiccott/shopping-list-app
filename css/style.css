@@ -124,3 +124,10 @@ body {
 	display: inline-block;
 	float: right;
 }
+
+@media (max-width: 630px) {
+	.list-content {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
