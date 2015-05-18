@@ -103,12 +103,18 @@ body {
 
 #list-options {
 	color: #131313;
-	width: 200px;
+	width: 100px;
 	margin: 0 auto;
 	text-align: center;
 }
 
-#list-options > a {
+.list-content > a {
 	color: inherit;
 	text-decoration: inherit;
+	margin: 0 auto;
+}
+
+.list-content > a > div {
+	display: inline-block;
+	float: right;
 }
