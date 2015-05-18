@@ -83,6 +83,12 @@ body {
 #item-input {
 	margin-top: 1em;
 	margin-bottom: 1em;
+	border: 1px solid transparent;
+}
+
+#item-input:hover {
+	box-sizing: content-box;
+	border: 1px solid #ffffff;
 }
 
 .btn-group {
