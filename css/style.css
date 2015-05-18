@@ -25,7 +25,7 @@ body {
 }*/
 
 .heading {
-	background-color: rgba(204,204,204,0.6);
+	background-color: rgba(255,255,255,0.6);
 	text-align: center;
 	padding: 3em;
 
@@ -83,6 +83,12 @@ body {
 	color: #131313;
 	background-color: rgba(255,255,255,0.5);
 	margin-bottom: 0.2em;
+}
+
+#incomplete-items li:hover,
+#complete-items li:hover,
+#list-options:hover {
+	background-color: rgb(255,255,255);
 }
 
 #complete-items li:last-child,
