@@ -9,8 +9,10 @@
 }
 
 body {
+	background-color: #999999;
 	background-image: url('../images/grocery-bg.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 	font-family: Arial, 'sans-serif';
 	font-weight: bold;
 	color: #131313;
@@ -55,7 +57,8 @@ body {
 
 #item-input > p,
 #incomplete-items li,
-#complete-items li {
+#complete-items li,
+#list-options {
 	padding: 0.6em 1em;
 }
 
@@ -96,4 +99,16 @@ body {
 	background-color: rgba(255,255,255,0.2);
 	margin-bottom: 0.2em;
 	text-decoration: line-through;
+}
+
+#list-options {
+	color: #131313;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#list-options > a {
+	color: inherit;
+	text-decoration: inherit;
 }
