@@ -16,9 +16,11 @@ body {
 	color: #131313;
 }
 
-div {
+/*Red border for positioning*/
+
+/*div {
 	border: 1px solid red;
-}
+}*/
 
 .heading {
 	background-color: rgba(204,204,204,0.6);
