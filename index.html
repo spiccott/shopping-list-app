@@ -5,6 +5,8 @@
 	<title>My Shopping List</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Kameron:700|Nunito:300' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -13,8 +15,10 @@
 			<p>Don't Come Home Without It!</p>
 		</div>
 		<div class="list-content">
-			<div id="item-input">
-				<p>Enter an Item then hit "Enter"</p>
+			<div id="item-input-div">
+				<input type="text" id="item-input" placeholder="Enter an Item then hit 'Enter'" autofocus>
+				<button type="submit" class="btn" style="display:none"></button>
+
 			</div>
 			<div id="incomplete-items">
 				<ul>
