@@ -4,7 +4,7 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;*/
 	list-style: none;
 }
 
@@ -25,7 +25,7 @@ body {
 }*/
 
 .heading {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.8);
 	text-align: center;
 	padding: 3em;
 	  box-shadow: 0 0 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
@@ -115,6 +115,7 @@ body {
 	color: #131313;
 	background-color: rgba(255,255,255,0.5);
 	margin-bottom: 0.2em;
+	word-wrap: break-word;
 }
 
 #incomplete-items li:hover,
@@ -137,6 +138,7 @@ body {
 	background-color: rgba(255,255,255,0.2);
 	margin-bottom: 0.2em;
 	text-decoration: line-through;
+	word-wrap: break-word;
 }
 
 #list-options {
@@ -155,5 +157,12 @@ body {
 .list-content > a > div {
 	display: inline-block;
 	float: right;
+}
+
+input.checkbox {
+	float: left;
+	margin-top: 5px;
+	margin-right: 1.2em;
+	
 }
 
