@@ -166,3 +166,7 @@ input.checkbox {
 	
 }
 
+.list-item {
+	display: flex;
+}
+

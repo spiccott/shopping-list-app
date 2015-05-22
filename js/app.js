@@ -7,7 +7,7 @@ $(document).ready(function() {
 		if(enterKey == 13) {
 			var listItem = $("#item-input").val();
 			if(listItem.length > 0)
-				$("#incomplete-items>ul").prepend( "<li><div><input type='checkbox' class='checkbox' id='check'/></div><div>" + listItem + "</div></li>" );
+				$("#incomplete-items>ul").prepend( "<li><div><input type='checkbox' class='checkbox' id='check'/></div><div class='list-item'>" + listItem + "</div></li>" );
 				$("#item-input").val("");
 		}
 	});
@@ -26,6 +26,6 @@ $(document).ready(function() {
 
 function verifyChecked() {
 	if (document.getElementById("check").checked) {
-		this.closest("li").insertAfter("#complete-items>ul");
+		$("input").closest("li").insertAfter("#complete-items>ul");
 	}
 }
