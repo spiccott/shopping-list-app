@@ -10,26 +10,19 @@
 
 body {
 	background-color: #999999;
-	/*background-image: url('../images/grocery-bg.jpg');*/
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url('../images/grocery-bg.jpg');
+	background-size: 1280px 900px;
+	background-repeat: repeat-y;
 	font-family: Arial, 'sans-serif';
 	font-weight: bold;
 	color: #131313;
 }
 
-/*Red border for positioning*/
-
-/*div {
-	border: 1px solid red;
-}*/
-
 .heading {
 	background-color: rgba(255,255,255,0.8);
 	text-align: center;
 	padding: 3em;
-	  box-shadow: 0 0 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
-
+	box-shadow: 0 0 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
 }
 
 .heading h1 {
@@ -67,16 +60,13 @@ body {
 }
 
 #item-input > p,
-#incomplete-items li,
-#complete-items li,
-#list-options {
+#item-list li,
+#reset {
 	padding: 0.6em 1em;
 }
 
-#item-input,
-#incomplete-items,
-#complete-items,
-#list-options {
+#item-list,
+#reset {
 	background-color: rgba(255,255,255,0.6);
 	color: #9f9f9f;
 	box-shadow: 0 0 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
@@ -87,9 +77,9 @@ body {
 	font-size: inherit;
 	font-weight: inherit;
 	color: #131313;
+	background-color: rgba(255,255,255,0.8);
 	padding: 0.6em 1em;
 	margin-top: 1em;
-	margin-bottom: 1em;
 	border: 1px solid transparent;
 	width: 100%;
 	box-shadow: 0 0 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
@@ -97,55 +87,37 @@ body {
 
 #item-input:hover {
 	border: 1px solid #ffffff;
-}
-
-.btn-group {
-	float: right;
-}
-
-/*.btn-group > img {
-	display: none;
-}
-
-.btn-group > img:hover {
-	display: inline;
-}*/
-
-#incomplete-items li {
-	color: #131313;
-	background-color: rgba(255,255,255,0.5);
-	margin-bottom: 0.2em;
-	word-wrap: break-word;
-}
-
-#incomplete-items li:hover,
-#complete-items li:hover,
-#list-options:hover {
 	background-color: rgb(255,255,255);
 }
 
-#complete-items li:last-child,
-#incomplete-items li:last-child {
-	margin-bottom: 0;
-}
-
-#complete-items {
-	margin-top: 0.3em;
+#item-list {
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-#complete-items li {
-	background-color: rgba(255,255,255,0.2);
+#item-list li {
+	color: #131313;
+	background-color: rgba(255,255,255,0.8);
 	margin-bottom: 0.2em;
-	text-decoration: line-through;
 	word-wrap: break-word;
 }
 
-#list-options {
+#item-list li:hover,
+#reset:hover {
+	background-color: rgb(255,255,255);
+}
+
+#item-list li:last-child {
+	margin-bottom: 0;
+}
+
+#reset {
 	color: #131313;
 	width: 100px;
 	margin: 0 auto;
 	text-align: center;
+	display: inline-block;
+	float: right;
 }
 
 .list-content > a {
@@ -154,19 +126,30 @@ body {
 	margin: 0 auto;
 }
 
-.list-content > a > div {
+.item-check {
 	display: inline-block;
+	position: absolute;
+	width: 22px;
+	height: 21px;
+	cursor: pointer;
+}
+
+.incomplete {
+	background-image: url('../images/incomplete.png');
+}
+
+.complete {
+	background-image: url('../images/complete.png');
+}
+
+.item-text {
+	margin-left: 2em;
+	width: 22px;
+	height: 21px;
+}
+
+.item-remove {
 	float: right;
-}
-
-input.checkbox {
-	float: left;
-	margin-top: 5px;
-	margin-right: 1.2em;
-	
-}
-
-.list-item {
-	display: flex;
+	cursor: pointer;
 }
 
